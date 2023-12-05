@@ -3,10 +3,13 @@ import { GameContext } from '../store/GameContext'
 
 function CardDisplay() {
 const {game} = useContext (GameContext)
-console.log(game)
+const {shuffledCards, setShuffledCards = useState({});
+
+
+}, []
   return (
     <div>
-        CardDisplay
+        {game}
     </div>
   )
 }
